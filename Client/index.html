@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- 下拉时间选择框 -->
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.leanModal.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript" language="javascript">
+
+    <!-- 获取当前时间 -->
+    function date(type, obj, update) {
+
+        function timeset() {
+            var myDate = new Date();
+            Y = myDate.getFullYear();
+            M = myDate.getMonth() + 1 < 10 ? "0" + (myDate.getMonth() + 1) : myDate.getMonth() + 1;
+            D = myDate.getDate() < 10 ? "0" + myDate.getDate() : myDate.getDate();
+
+            var time = type.replace("Y", Y);
+            time = time.replace("M", M);
+            time = time.replace("D", D);
+
+            if (obj) {
+                var idbox = document.getElementById(obj);
+                idbox.innerHTML = time;
+            } else {
+                document.write(time);
+            }
+
+        };
+
+
+        if (update == 1) {
+            setInterval(timeset, 1000);
+        } else {
+            timeset();
+        }
+
+    };
+
+    now = new Date(), hour = now.getHours()
+    var dayNames = new Array("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六");
+    Stamp = new Date();
+    </script>
+
+</head>
+
+<body>
+    <div class="line line1"></div>
+    <div id="header">
+        <h1>会议室申请平台</h1>
+        <p class="login">
+            <span>尚未登录</span><a href="#loginmodal" class="flatbtn" id="modaltrigger">登录</a>
+
+        </p>
+        <div class="select_menu">
+            <p>今天是:
+                <script type="text/javascript">
+                date("Y年M月D日");
+                document.write(dayNames[Stamp.getDay()] + "");
+                </script>
+            </p>
+            <p>选择地点:
+                <select name="space">
+                    <option value="会议室一(201)">会议室一(201)</option>
+                    <option value="会议室二(202)">会议室二(202)</option>
+                </select>
+            </p>
+            <p>选择日期:
+                <input type="date" name="text" class="txtfield">
+            </p>
+            <a style="float: left" href="#">确认</a>
+            <a href="#loginmodal1" class="flatbtn" id="modaltrigger1">申请</a>
+        </div>
+    </div>
+    <div id="contain">
+        <h1>已预约情况</h1>
+        <div class="signal">
+            <p>地点:会议室一(201)</p>
+            <p>申请人:蒋恩涛</p>
+            <p>联系电话:15071426078</p>
+            <p>预约时间:14:30-16:30</p>
+            <p>申请团队:新思路团队前端组</p>
+            <p>申请理由:例会 统计暑假留校相关事宜</p>
+        </div>
+        <div class="signal">
+            <p>地点:会议室一(201)</p>
+            <p>申请人:蒋恩涛</p>
+            <p>联系电话:15071426078</p>
+            <p>预约时间:14:30-16:30</p>
+            <p>申请团队:新思路团队前端组</p>
+            <p>申请理由:例会 统计暑假留校相关事宜</p>
+        </div>
+        <div class="signal">
+            <p>地点:会议室一(201)</p>
+            <p>申请人:蒋恩涛</p>
+            <p>联系电话:15071426078</p>
+            <p>预约时间:14:30-16:30</p>
+            <p>申请团队:新思路团队前端组</p>
+            <p>申请理由:例会 统计暑假留校相关事宜</p>
+        </div>
+        <div class="signal">
+            <p>地点:会议室一(201)</p>
+            <p>申请人:蒋恩涛</p>
+            <p>联系电话:15071426078</p>
+            <p>预约时间:14:30-16:30</p>
+            <p>申请团队:新思路团队前端组</p>
+            <p>申请理由:例会 统计暑假留校相关事宜</p>
+        </div>
+        <div class="signal">
+            <p>地点:会议室一(201)</p>
+            <p>申请人:蒋恩涛</p>
+            <p>联系电话:15071426078</p>
+            <p>预约时间:14:30-16:30</p>
+            <p>申请团队:新思路团队前端组</p>
+            <p>申请理由:例会 统计暑假留校相关事宜</p>
+        </div>
+        <div class="signal">
+            <p>地点:会议室一(201)</p>
+            <p>申请人:蒋恩涛</p>
+            <p>联系电话:15071426078</p>
+            <p>预约时间:14:30-16:30</p>
+            <p>申请团队:新思路团队前端组</p>
+            <p>申请理由:例会 统计暑假留校相关事宜</p>
+        </div>
+        <div class="signal">
+            <p>地点:会议室一(201)</p>
+            <p>申请人:蒋恩涛</p>
+            <p>联系电话:15071426078</p>
+            <p>预约时间:14:30-16:30</p>
+            <p>申请团队:新思路团队前端组</p>
+            <p>申请理由:例会 统计暑假留校相关事宜</p>
+        </div>
+        <div class="page_turn">
+            <div class="page1 page present_page"><a href="#">1</a>
+            </div>
+            <div class="page2 page"><a href="#">2</a>
+            </div>
+            <div class="next_page page"><a href="#">下一页</a>
+            </div>
+            <div class="last_page page"><a href="#">最后一页</a>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="line line2"></div>
+        <p>CopyRight © 2014 New-thread All Right Receved</p>
+    </div>
+
+    <div id="w">
+    </div>
+    <div id="loginmodal" style="display:none; class="form" ">
+        <h1>登录</h1>
+        <form name="loginform" method="post" action="index.html">
+            <p>用户名:<input type="text" name="username" class="txtfield" tabindex="1"></p>
+            <br>
+            <p>密&nbsp;&nbsp;&nbsp;&nbsp;码:<input type="password" name="password" class="txtfield" tabindex="2"></p>
+            <div class="center">
+                <input type="submit" name="loginbtn" class="flatbtn-blu hidemodal" value="登录" tabindex="3">
+            </div>
+        </form>
+    </div>
+
+    <div id="loginmodal1" style="display:none;">
+        <h1>登录</h1>
+        <form name="loginform" method="post" action="index.html">
+            <p class="select_p" style="margin-top:25px; margin-bottom:10px;"><span>选择地点:</span>
+                <select name="space">
+                    <option value="会议室一(201)">会议室一(201)</option>
+                    <option value="会议室二(202)">会议室二(202)</option>
+                </select>
+            </p>
+            <p>申&nbsp;&nbsp;请&nbsp;&nbsp;人:<input type="text" name="username" class="txtfield" tabindex="1"></p>
+            <br>
+            <p>联系电话:<input type="text" name="text" class="txtfield" tabindex="2"></p>
+            <br>
+            <p>预约时间:<input type="date" name="text" class="txtfield" tabindex="3"></p>
+            <br>
+            <p>申请团队:<input type="text" name="text" class="txtfield" tabindex="4"></p>
+            <br>
+            <p>申请理由:<input type="textarea" name="textarea" class="txtfield" tabindex="5"></p>
+            <div class="center1">
+                <input type="submit" name="loginbtn" class="flatbtn-blu hidemodal" value="申请" tabindex="3">
+            </div>
+        </form>
+    </div>
+
+    <script type="text/javascript">
+    $(function() {
+        $('#loginform').submit(function(e) {
+            return false;
+        });
+
+        $('#modaltrigger').leanModal({
+            top: 110,
+            overlay: 0.45,
+            closeButton: ".hidemodal"
+        });
+    });
+
+    $(function() {
+        $('#loginform').submit(function(e) {
+            return false;
+        });
+
+        $('#modaltrigger1').leanModal({
+            top: 110,
+            overlay: 0.45,
+            closeButton: ".hidemodal"
+        });
+    });
+    </script>
+
+</body>
+
+</html>
