@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="FT" Class="ReceiptsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=210.42.151.55;Initial Catalog=FT;Persist Security Info=True;User ID=ftuser" SettingsObjectName="FT_Utils.Properties.Settings" SettingsPropertyName="FTConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.DIC_ReceiptsAuditLevel" Member="DIC_ReceiptsAuditLevel">
+    <Type Name="DIC_ReceiptsAuditLevel">
+      <Column Name="ReceiptsCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ReceiptsEnglishName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ReceiptsChineseName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="AuditLevel" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

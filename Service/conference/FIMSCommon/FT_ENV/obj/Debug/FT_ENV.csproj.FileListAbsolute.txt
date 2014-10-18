@@ -1,0 +1,5 @@
+Z:\GitDB_FIMS_Code\BinAo\Client_PC\FIMSCommon\FT_ENV\bin\Debug\temp\FT_ENV.dll
+Z:\GitDB_FIMS_Code\BinAo\Client_PC\FIMSCommon\FT_ENV\bin\Debug\temp\FT_ENV.pdb
+Z:\GitDB_FIMS_Code\BinAo\Client_PC\FIMSCommon\FT_ENV\obj\Debug\ResolveAssemblyReference.cache
+Z:\GitDB_FIMS_Code\BinAo\Client_PC\FIMSCommon\FT_ENV\obj\Debug\FT_ENV.dll
+Z:\GitDB_FIMS_Code\BinAo\Client_PC\FIMSCommon\FT_ENV\obj\Debug\FT_ENV.pdb

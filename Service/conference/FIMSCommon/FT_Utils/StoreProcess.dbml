@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="FT" Class="StoreProcessDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=210.42.151.55;Initial Catalog=FT;Persist Security Info=True;User ID=FTAdmin" SettingsObjectName="FT_Utils.Properties.Settings" SettingsPropertyName="FTConnectionString2" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.Pro_GetSystemDate" Method="Pro_GetSystemDate">
+    <ElementType Name="Pro_GetSystemDateResult">
+      <Column Name="time" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>

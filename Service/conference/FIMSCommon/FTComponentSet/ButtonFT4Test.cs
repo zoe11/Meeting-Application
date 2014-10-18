@@ -1,0 +1,65 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.Drawing;
+
+namespace FTComponentSet
+{
+    public class ButtonFT4Test :Button
+    {
+        private bool isTest = FT_ENV.FTEnv.IsDebug;
+
+        public enum ShowBtnMode
+        { 
+            Operate = 0,
+            Confirm = 1,
+            Cancel = 2
+
+        }
+        private ShowBtnMode myShowBtnMode;
+        public ShowBtnMode MyShowBtnMode
+        {
+            get
+            {
+                return myShowBtnMode;
+            }
+            set
+            {
+                myShowBtnMode = value;
+                SetColors();
+            }
+        
+        }
+        public void SetColors()
+        {
+            switch (myShowBtnMode)
+            { 
+                case ShowBtnMode.Operate:
+                    this.BackColor = Env_Const.buttonColorGreen;
+                    this.ForeColor = Color.White;
+                    break;
+                case ShowBtnMode.Confirm:
+                    this.BackColor = Color.LightSlateGray;
+                    this.ForeColor = Color.White;
+                    break;
+                default:
+                    this.BackColor = Env_Const.buttonColorBlue;
+                    this.ForeColor = Color.White;
+                    break;
+               
+                
+            }
+        
+        }
+
+
+        public ButtonFT4Test()
+            : base()
+        {
+
+            SkinController.SetFTButtonSkin(this);
+        }
+    }
+}

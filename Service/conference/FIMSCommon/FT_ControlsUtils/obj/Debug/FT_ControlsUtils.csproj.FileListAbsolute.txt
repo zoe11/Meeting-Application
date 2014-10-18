@@ -1,0 +1,16 @@
+Z:\GitDB_FIMS_Code\BinAo\Client_PC\FIMSCommon\FT_ControlsUtils\bin\Debug\FT_ControlsUtils.dll
+Z:\GitDB_FIMS_Code\BinAo\Client_PC\FIMSCommon\FT_ControlsUtils\bin\Debug\FT_ControlsUtils.pdb
+Z:\GitDB_FIMS_Code\BinAo\Client_PC\FIMSCommon\FT_ControlsUtils\bin\Debug\EnmsMGT_Model.dll
+Z:\GitDB_FIMS_Code\BinAo\Client_PC\FIMSCommon\FT_ControlsUtils\bin\Debug\FT_ENV.dll
+Z:\GitDB_FIMS_Code\BinAo\Client_PC\FIMSCommon\FT_ControlsUtils\bin\Debug\SysMGT_Model.dll
+Z:\GitDB_FIMS_Code\BinAo\Client_PC\FIMSCommon\FT_ControlsUtils\bin\Debug\EnmsMGT_Model.pdb
+Z:\GitDB_FIMS_Code\BinAo\Client_PC\FIMSCommon\FT_ControlsUtils\bin\Debug\SysMGT_Model.pdb
+Z:\GitDB_FIMS_Code\BinAo\Client_PC\FIMSCommon\FT_ControlsUtils\bin\Debug\FT_ENV.pdb
+Z:\GitDB_FIMS_Code\BinAo\Client_PC\FIMSCommon\FT_ControlsUtils\obj\Debug\ResolveAssemblyReference.cache
+Z:\GitDB_FIMS_Code\BinAo\Client_PC\FIMSCommon\FT_ControlsUtils\obj\Debug\FT_ControlsUtils.RoleDetails.resources
+Z:\GitDB_FIMS_Code\BinAo\Client_PC\FIMSCommon\FT_ControlsUtils\obj\Debug\FT_ControlsUtils.RoleTree.resources
+Z:\GitDB_FIMS_Code\BinAo\Client_PC\FIMSCommon\FT_ControlsUtils\obj\Debug\FT_ControlsUtils.TriStateTreeView.resources
+Z:\GitDB_FIMS_Code\BinAo\Client_PC\FIMSCommon\FT_ControlsUtils\obj\Debug\GenerateResource.read.1.tlog
+Z:\GitDB_FIMS_Code\BinAo\Client_PC\FIMSCommon\FT_ControlsUtils\obj\Debug\GenerateResource.write.1.tlog
+Z:\GitDB_FIMS_Code\BinAo\Client_PC\FIMSCommon\FT_ControlsUtils\obj\Debug\FT_ControlsUtils.dll
+Z:\GitDB_FIMS_Code\BinAo\Client_PC\FIMSCommon\FT_ControlsUtils\obj\Debug\FT_ControlsUtils.pdb

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Conference" Class="DataClassesCFDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=59.68.29.111;Initial Catalog=Conference;Persist Security Info=True;User ID=CFUser" SettingsObjectName="Conference_DAL.Properties.Settings" SettingsPropertyName="ConferenceConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.T_User" Member="T_User">
+    <Type Name="T_User">
+      <Column Name="UserID" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IsInnerUser" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsLogoutUser" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CreateOperatorName" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CreateOperatorID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastModiOperatorName" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="LastModiOperatorID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="LastModiTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="NVarChar(512)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_ConferenceInfo" Member="T_ConferenceInfo">
+    <Type Name="T_ConferenceInfo">
+      <Column Name="ConferenceID" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ConferenceName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ConferenceDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="StartTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AppointmentPeople" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ParticipantsPeople" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ConferenceTopics" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ConferencePlace" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

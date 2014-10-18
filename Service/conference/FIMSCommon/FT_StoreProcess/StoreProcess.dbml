@@ -1,0 +1,1156 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="FTBA" Class="StoreProcessDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=210.42.151.46;Initial Catalog=FTBA;Persist Security Info=True;User ID=FTAdmin" SettingsObjectName="FT_StoreProcess.Properties.Settings" SettingsPropertyName="FTBAConnectionString1" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.Pro_GetSerialIDIntByPurchasePlanListMaterialDetails" Method="Pro_GetSerialIDIntByPurchasePlanListMaterialDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByPurchasePlanListMaterialDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_EquipmentCheckList" Method="Pro_EquipmentCheckList">
+    <Parameter Name="EquipmentID" Parameter="equipmentID" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="CheckYear" Parameter="checkYear" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CheckMonth" Parameter="checkMonth" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Pro_EquipmentCheckListResult">
+      <Column Name="EquipmentCheckListID" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="EquipmentID" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="EquipmentName" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="CheckYear" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CheckMonth" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CheckItemNameCode" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="CheckItemName" Type="System.String" DbType="NVarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="CheckItemTypeCode" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="CheckItemType" Type="System.String" DbType="NVarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="CO1Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO1CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO2Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO2CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO3Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO3CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO4Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO4CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO5Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO5CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO6Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO6CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO7Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO7CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO8Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO8CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO9Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO9CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO10Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO10CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO11Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO11CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO12Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO12CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO13Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO13CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO14Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO14CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO15Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO15CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO16Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO16CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO17Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO17CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO18Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO18CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO19Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO19CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO20Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO20CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO21Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO21CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO22Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO22CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO23Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO23CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO24Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO24CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO25Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO25CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO26Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO26CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO27Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO27CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO28Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO28CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO29Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO29CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO30Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO30CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CO31Result" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CO31CheckerID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSeriaIDNvarcharByVendorInfo" Method="Pro_GetSeriaIDNvarcharByVendorInfo">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByAttachment" Method="Pro_GetSerialIDIntByAttachment">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByAttachmentResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByBeMadeCampOnStockInRecordDetails" Method="Pro_GetSerialIDIntByBeMadeCampOnStockInRecordDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByBeMadeCampOnStockInRecordDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByBeMadeCampOnStockOutRecordDetails" Method="Pro_GetSerialIDIntByBeMadeCampOnStockOutRecordDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByBeMadeCampOnStockOutRecordDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByBeMadeFreeStockInRecordDetails" Method="Pro_GetSerialIDIntByBeMadeFreeStockInRecordDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByBeMadeFreeStockInRecordDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByBeMadeFreeStockOutRecordDetails" Method="Pro_GetSerialIDIntByBeMadeFreeStockOutRecordDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByBeMadeFreeStockOutRecordDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByBOM" Method="Pro_GetSerialIDIntByBOM">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByBOMResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByCustomerContacts" Method="Pro_GetSerialIDIntByCustomerContacts">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByCustomerContactsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByEntityCampOnStockInRecordDetails" Method="Pro_GetSerialIDIntByEntityCampOnStockInRecordDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByEntityCampOnStockInRecordDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByEntityCampOnStockOutRecordDetails" Method="Pro_GetSerialIDIntByEntityCampOnStockOutRecordDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByEntityCampOnStockOutRecordDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByEntityFreeStockInRecordDetails" Method="Pro_GetSerialIDIntByEntityFreeStockInRecordDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByEntityFreeStockInRecordDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByEntityFreeStockOutRecordDetails" Method="Pro_GetSerialIDIntByEntityFreeStockOutRecordDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByEntityFreeStockOutRecordDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByEquipmentCheckList" Method="Pro_GetSerialIDIntByEquipmentCheckList">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByEquipmentCheckListResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByInnerSalesOrderDetails" Method="Pro_GetSerialIDIntByInnerSalesOrderDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByInnerSalesOrderDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByMaterial" Method="Pro_GetSerialIDIntByMaterial">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByMaterialResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByProductionDemandAnalysisListConsumptionDetails" Method="Pro_GetSerialIDIntByProductionDemandAnalysisListConsumptionDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByProductionDemandAnalysisListConsumptionDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByProductionDemandAnalysisListContributeAmountDetails" Method="Pro_GetSerialIDIntByProductionDemandAnalysisListContributeAmountDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByProductionDemandAnalysisListContributeAmountDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByProductionDemandAnalysisListDetails" Method="Pro_GetSerialIDIntByProductionDemandAnalysisListDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByProductionDemandAnalysisListDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByPurchaseCarryOutListMaterialDetails" Method="Pro_GetSerialIDIntByPurchaseCarryOutListMaterialDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByPurchaseCarryOutListMaterialDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByPurchaseCarryOutListVendorDetails" Method="Pro_GetSerialIDIntByPurchaseCarryOutListVendorDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByPurchaseCarryOutListVendorDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByPurchasePlanList" Method="Pro_GetSerialIDNvarcharByPurchasePlanList">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByPurchasePlanListVendorDetails" Method="Pro_GetSerialIDIntByPurchasePlanListVendorDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByPurchasePlanListVendorDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByStockInRecordDetails" Method="Pro_GetSerialIDIntByStockInRecordDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByStockInRecordDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByStockOutRecordDetails" Method="Pro_GetSerialIDIntByStockOutRecordDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByStockOutRecordDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByVendorContacts" Method="Pro_GetSerialIDIntByVendorContacts">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByVendorContactsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByCustomerDeliveryNotice" Method="Pro_GetSerialIDNvarcharByCustomerDeliveryNotice">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByDeliveryOrderBill" Method="Pro_GetSerialIDNvarcharByDeliveryOrderBill">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByInnerSalesOrder" Method="Pro_GetSerialIDNvarcharByInnerSalesOrder">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByMaterialCustomerPriceScheme" Method="Pro_GetSerialIDNvarcharByMaterialCustomerPriceScheme">
+    <Parameter Name="MaterialID" Parameter="materialID" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="MaterialVersion" Parameter="materialVersion" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByMaterialPubPriceScheme" Method="Pro_GetSerialIDNvarcharByMaterialPubPriceScheme">
+    <Parameter Name="MaterialID" Parameter="materialID" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="MaterialVersion" Parameter="materialVersion" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByMaterialVendorPriceScheme" Method="Pro_GetSerialIDNvarcharByMaterialVendorPriceScheme">
+    <Parameter Name="MaterialID" Parameter="materialID" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="MaterialVersion" Parameter="materialVersion" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByProductionDemandAnalysisList" Method="Pro_GetSerialIDNvarcharByProductionDemandAnalysisList">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByPurchaseList" Method="Pro_GetSerialIDNvarcharByPurchaseList">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_PreventRpeatLogin" Method="Pro_PreventRpeatLogin">
+    <Parameter Name="UserID" Parameter="userID" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="Out" Parameter="out" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_BOMCircleCheck" Method="Pro_BOMCircleCheck" IsComposable="true">
+    <Parameter Name="ParentMaterialID" Parameter="parentMaterialID" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="ParentMaterialVersion" Parameter="parentMaterialVersion" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="ChildMaterialID" Parameter="childMaterialID" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="ChildMaterialVersion" Parameter="childMaterialVersion" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="UpOrDown" Parameter="upOrDown" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="Result" Parameter="result" Type="System.String" DbType="NVarChar(30)" Direction="InOut" />
+    <Return Type="object" />
+  </Function>
+  <Function Name="dbo.Pro_GetSystemDate" Method="Pro_GetSystemDate">
+    <ElementType Name="Pro_GetSystemDateResult">
+      <Column Name="time" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSystermDate_Day" Method="Pro_GetSystermDate_Day">
+    <ElementType Name="Pro_GetSystermDate_DayResult">
+      <Column Name="" Member="Column1" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_ProductionDemandAnalysisListSerial" Method="Pro_ProductionDemandAnalysisListSerial" IsComposable="true">
+    <Parameter Name="ISOID" Parameter="iSOID" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="CampOnLevelCode" Parameter="campOnLevelCode" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="CampOnLevel" Parameter="campOnLevel" Type="System.String" DbType="NVarChar(40)" />
+    <Parameter Name="EntryClerkID" Parameter="entryClerkID" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="ProductionDemandAnalysisListID" Parameter="productionDemandAnalysisListID" Type="System.String" DbType="NVarChar(30)" Direction="InOut" />
+    <Return Type="object" />
+  </Function>
+  <Function Name="dbo.Pro_ProductionDemandAnalysisList_Deliver" Method="Pro_ProductionDemandAnalysisList_Deliver" IsComposable="true">
+    <Parameter Name="ProductionDemandAnalysisListID" Parameter="productionDemandAnalysisListID" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="OperatorID" Parameter="operatorID" Type="System.String" DbType="NVarChar(20)" />
+    <Return Type="object" />
+  </Function>
+  <Function Name="dbo.Pro_UpdatePurchasePlanListDemandStockInAccomplishStatus" Method="Pro_UpdatePurchasePlanListDemandStockInAccomplishStatus">
+    <Parameter Name="PurchasePlanListMaterialDetailsSID" Parameter="purchasePlanListMaterialDetailsSID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="AccomplishStatusModiOperatorID" Parameter="accomplishStatusModiOperatorID" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="AccomplishStatusModiOperatorName" Parameter="accomplishStatusModiOperatorName" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="AccomplishStatusModiTime" Parameter="accomplishStatusModiTime" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="result" Type="System.Boolean" DbType="Bit" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByMateriaCheckoutPlan" Method="Pro_GetSerialIDNvarcharByMateriaCheckoutPlan">
+    <Parameter Name="MaterialID" Parameter="materialID" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="MaterialVersion" Parameter="materialVersion" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByOutStockInList" Method="Pro_GetSerialIDNvarcharByOutStockInList">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByDeliveryOrderBillDetailsRegister" Method="Pro_GetSerialIDIntByDeliveryOrderBillDetailsRegister">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByDeliveryOrderBillDetailsRegisterResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByDeliveryOrderBillDetails" Method="Pro_GetSerialIDIntByDeliveryOrderBillDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByDeliveryOrderBillDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByOutStockInListDetailsVesting" Method="Pro_GetSerialIDIntByOutStockInListDetailsVesting">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByOutStockInListDetailsVestingResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByOutStockInListDetails" Method="Pro_GetSerialIDIntByOutStockInListDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByOutStockInListDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByMaterialDetermineCheckoutDetail" Method="Pro_GetSerialIDIntByMaterialDetermineCheckoutDetail">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByMaterialDetermineCheckoutDetailResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByMaterialAmountsCheckoutDetail" Method="Pro_GetSerialIDIntByMaterialAmountsCheckoutDetail">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByMaterialAmountsCheckoutDetailResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByIPQCMaterialDetermineTheAmontCheckoutDetail" Method="Pro_GetSerialIDIntByIPQCMaterialDetermineTheAmontCheckoutDetail">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByIPQCMaterialDetermineTheAmontCheckoutDetailResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByIQCMaterialDetermineTheAmontCheckoutDetail" Method="Pro_GetSerialIDIntByIQCMaterialDetermineTheAmontCheckoutDetail">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByIQCMaterialDetermineTheAmontCheckoutDetailResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByIQCDetermineTheNatureDetail" Method="Pro_GetSerialIDIntByIQCDetermineTheNatureDetail">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByIQCDetermineTheNatureDetailResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByIQCDefectiveMaterialClassifyStatistics" Method="Pro_GetSerialIDIntByIQCDefectiveMaterialClassifyStatistics">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByIQCDefectiveMaterialClassifyStatisticsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByIPQCMaterialDetermineTheAmontCheckoutDetail" Method="Pro_GetSerialIDIntByIPQCMaterialDetermineTheAmontCheckoutDetail1">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByIPQCMaterialDetermineTheAmontCheckoutDetailResult1">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByIPQCDetermineTheNatureDetail" Method="Pro_GetSerialIDIntByIPQCDetermineTheNatureDetail">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByIPQCDetermineTheNatureDetailResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByIPQCDefectiveMaterialClassifyStatistics" Method="Pro_GetSerialIDIntByIPQCDefectiveMaterialClassifyStatistics">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByIPQCDefectiveMaterialClassifyStatisticsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByIQCMaterialDetermineTheAmontCheckoutDetail" Method="Pro_GetSerialIDIntByIQCMaterialDetermineTheAmontCheckoutDetail1">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByIQCMaterialDetermineTheAmontCheckoutDetailResult1">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByOQCDefectiveMaterialClassifyStatistics" Method="Pro_GetSerialIDIntByOQCDefectiveMaterialClassifyStatistics">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByOQCDefectiveMaterialClassifyStatisticsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByOQCDetermineTheNatureDetail" Method="Pro_GetSerialIDIntByOQCDetermineTheNatureDetail">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByOQCDetermineTheNatureDetailResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByOQCMaterialDetermineTheAmontCheckoutDetail" Method="Pro_GetSerialIDIntByOQCMaterialDetermineTheAmontCheckoutDetail">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByOQCMaterialDetermineTheAmontCheckoutDetailResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByFQCMaterialDetermineTheAmontCheckoutDetail" Method="Pro_GetSerialIDIntByFQCMaterialDetermineTheAmontCheckoutDetail">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByFQCMaterialDetermineTheAmontCheckoutDetailResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByFQCDetermineTheNatureDetail" Method="Pro_GetSerialIDIntByFQCDetermineTheNatureDetail">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByFQCDetermineTheNatureDetailResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByFQCDefectiveMaterialClassifyStatistics" Method="Pro_GetSerialIDIntByFQCDefectiveMaterialClassifyStatistics">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByFQCDefectiveMaterialClassifyStatisticsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByStepOneTeamOrg" Method="Pro_GetSerialIDIntByStepOneTeamOrg">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByStepOneTeamOrgResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByStepTwoProblemDescription" Method="Pro_GetSerialIDIntByStepTwoProblemDescription">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByStepTwoProblemDescriptionResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByStepTwoProblemDescriptionAttachment" Method="Pro_GetSerialIDIntByStepTwoProblemDescriptionAttachment">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByStepTwoProblemDescriptionAttachmentResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByStepThreeContainmentActions" Method="Pro_GetSerialIDIntByStepThreeContainmentActions">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByStepThreeContainmentActionsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByStepThreeContainmentActionsAttachment" Method="Pro_GetSerialIDIntByStepThreeContainmentActionsAttachment">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByStepThreeContainmentActionsAttachmentResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByStepFourRootCauses" Method="Pro_GetSerialIDIntByStepFourRootCauses">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByStepFourRootCausesResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByStepFourRootCausesAttachment" Method="Pro_GetSerialIDIntByStepFourRootCausesAttachment">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByStepFourRootCausesAttachmentResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByStepFiveCorrectiveActions" Method="Pro_GetSerialIDIntByStepFiveCorrectiveActions">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByStepFiveCorrectiveActionsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByStepFiveCorrectiveActionsAttachment" Method="Pro_GetSerialIDIntByStepFiveCorrectiveActionsAttachment">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByStepFiveCorrectiveActionsAttachmentResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByStepSevenPreventiveActions" Method="Pro_GetSerialIDIntByStepSevenPreventiveActions">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByStepSevenPreventiveActionsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByStepSevenPreventiveActionsAttachment" Method="Pro_GetSerialIDIntByStepSevenPreventiveActionsAttachment">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByStepSevenPreventiveActionsAttachmentResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByStepEightReview" Method="Pro_GetSerialIDIntByStepEightReview">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByStepEightReviewResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByStepEightReviewAttachment" Method="Pro_GetSerialIDIntByStepEightReviewAttachment">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByStepEightReviewAttachmentResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByInnerNotify_StepOneProDescription" Method="Pro_GetSerialIDIntByInnerNotify_StepOneProDescription">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByInnerNotify_StepOneProDescriptionResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByInnerNotify_StepOneProDescriptionAttachment" Method="Pro_GetSerialIDIntByInnerNotify_StepOneProDescriptionAttachment">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByInnerNotify_StepOneProDescriptionAttachmentResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByInnerNotify_StepTwoTakeAction" Method="Pro_GetSerialIDIntByInnerNotify_StepTwoTakeAction">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByInnerNotify_StepTwoTakeActionResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByInnerNotify_StepTwoTakeActionAttachment" Method="Pro_GetSerialIDIntByInnerNotify_StepTwoTakeActionAttachment">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByInnerNotify_StepTwoTakeActionAttachmentResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByInnerNotify_StepThreeSuspiciousMaterial" Method="Pro_GetSerialIDIntByInnerNotify_StepThreeSuspiciousMaterial">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByInnerNotify_StepThreeSuspiciousMaterialResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByInnerNotify_StepFourRelevantOperatorSignaturecConfirmation" Method="Pro_GetSerialIDIntByInnerNotify_StepFourRelevantOperatorSignaturecConfirmation">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByInnerNotify_StepFourRelevantOperatorSignaturecConfirmationResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByIPQCBatchCheckout" Method="Pro_GetSerialIDNvarcharByIPQCBatchCheckout">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByCorrectMeasureReport" Method="Pro_GetSerialIDNvarcharByCorrectMeasureReport">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByInnerNotifyAndProcessReceipts" Method="Pro_GetSerialIDNvarcharByInnerNotifyAndProcessReceipts">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByFQCBatchCheckout" Method="Pro_GetSerialIDNvarcharByFQCBatchCheckout">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByOQCBatchCheckout" Method="Pro_GetSerialIDNvarcharByOQCBatchCheckout">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByIQCBatchCheckout" Method="Pro_GetSerialIDNvarcharByIQCBatchCheckout">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByProductionPlanImplementList" Method="Pro_GetSerialIDNvarcharByProductionPlanImplementList">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByCustomerNotifyAndProcessReceipts" Method="Pro_GetSerialIDNvarcharByCustomerNotifyAndProcessReceipts">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByCustomerNotify_StepOneProDescription" Method="Pro_GetSerialIDIntByCustomerNotify_StepOneProDescription">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByCustomerNotify_StepOneProDescriptionResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByCustomerNotify_StepOneProDescriptionAttachment" Method="Pro_GetSerialIDIntByCustomerNotify_StepOneProDescriptionAttachment">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByCustomerNotify_StepOneProDescriptionAttachmentResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByCustomerNotify_StepTwoTakeAction" Method="Pro_GetSerialIDIntByCustomerNotify_StepTwoTakeAction">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByCustomerNotify_StepTwoTakeActionResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByCustomerNotify_StepTwoTakeActionAttachment" Method="Pro_GetSerialIDIntByCustomerNotify_StepTwoTakeActionAttachment">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByCustomerNotify_StepTwoTakeActionAttachmentResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByCustomerNotify_StepThreeSuspiciousMaterial" Method="Pro_GetSerialIDIntByCustomerNotify_StepThreeSuspiciousMaterial">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByCustomerNotify_StepThreeSuspiciousMaterialResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByCustomerNotify_StepFourSign" Method="Pro_GetSerialIDIntByCustomerNotify_StepFourSign">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByCustomerNotify_StepFourSignResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByVendorNotifyAndProcessReceipts" Method="Pro_GetSerialIDNvarcharByVendorNotifyAndProcessReceipts">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByVendorNotify_StepOneProDescription" Method="Pro_GetSerialIDIntByVendorNotify_StepOneProDescription">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByVendorNotify_StepOneProDescriptionResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByVendorNotify_StepOneProDescriptionAttachment" Method="Pro_GetSerialIDIntByVendorNotify_StepOneProDescriptionAttachment">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByVendorNotify_StepOneProDescriptionAttachmentResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByVendorNotify_StepTwoTakeAction" Method="Pro_GetSerialIDIntByVendorNotify_StepTwoTakeAction">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByVendorNotify_StepTwoTakeActionResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByVendorNotify_StepTwoTakeActionAttachment" Method="Pro_GetSerialIDIntByVendorNotify_StepTwoTakeActionAttachment">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByVendorNotify_StepTwoTakeActionAttachmentResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByVendorNotify_StepThreeSuspiciousMaterial" Method="Pro_GetSerialIDIntByVendorNotify_StepThreeSuspiciousMaterial">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByVendorNotify_StepThreeSuspiciousMaterialResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByVendorNotify_StepFourSign" Method="Pro_GetSerialIDIntByVendorNotify_StepFourSign">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByVendorNotify_StepFourSignResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByInternalStorageBill" Method="Pro_GetSerialIDNvarcharByInternalStorageBill">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByInternalStorageBillDetails" Method="Pro_GetSerialIDIntByInternalStorageBillDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByInternalStorageBillDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByInternalOutboundOrderBill" Method="Pro_GetSerialIDNvarcharByInternalOutboundOrderBill">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByInternalOutboundOrderBillDetails" Method="Pro_GetSerialIDIntByInternalOutboundOrderBillDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByInternalOutboundOrderBillDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByInternalOutboundOrderBillDetailsRegister" Method="Pro_GetSerialIDIntByInternalOutboundOrderBillDetailsRegister">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByInternalOutboundOrderBillDetailsRegisterResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByOQCDefectiveMaterialClassifyStatistics" Method="Pro_GetSerialIDIntByOQCDefectiveMaterialClassifyStatistics1">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByOQCDefectiveMaterialClassifyStatisticsResult1">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByDefectiveGoodsStockDetails" Method="Pro_GetSerialIDIntByDefectiveGoodsStockDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByDefectiveGoodsStockDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByDefectiveGoodsStockInRecordDetails" Method="Pro_GetSerialIDIntByDefectiveGoodsStockInRecordDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByDefectiveGoodsStockInRecordDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByStockDetails" Method="Pro_GetSerialIDIntByStockDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByStockDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByDefectiveGoodsStockOutRecordDetails" Method="Pro_GetSerialIDIntByDefectiveGoodsStockOutRecordDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByDefectiveGoodsStockOutRecordDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByProcessFlowCardTempletDetails" Method="Pro_GetSerialIDIntByProcessFlowCardTempletDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByProcessFlowCardTempletDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByProcessFlowCardTemplet" Method="Pro_GetSerialIDIntByProcessFlowCardTemplet">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByProcessFlowCardTempletResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByInternalReturnMaterialBillDetails" Method="Pro_GetSerialIDIntByInternalReturnMaterialBillDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByInternalReturnMaterialBillDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByInternalReturnMaterialBill" Method="Pro_GetSerialIDNvarcharByInternalReturnMaterialBill">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByMateriaCheckoutPlan" Method="Pro_GetSerialIDNvarcharByMateriaCheckoutPlan1">
+    <Parameter Name="MaterialID" Parameter="materialID" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="MaterialVersion" Parameter="materialVersion" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByStockCountAnalysis" Method="Pro_GetSerialIDNvarcharByStockCountAnalysis">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByStockCountBill" Method="Pro_GetSerialIDNvarcharByStockCountBill">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByStockCountBillDetails" Method="Pro_GetSerialIDNvarcharByStockCountBillDetails">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByProcessFlowDetailSerialList" Method="Pro_GetSerialIDIntByProcessFlowDetailSerialList">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByProcessFlowDetailSerialListResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByCustomerInfo" Method="Pro_GetSerialIDNvarcharByCustomerInfo">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByVendorInfo" Method="Pro_GetSerialIDNvarcharByVendorInfo">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByCustomerDeliveryNotice" Method="Pro_GetSerialIDNvarcharByCustomerDeliveryNotice1">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByExternalReturnBillDetails" Method="Pro_GetSerialIDIntByExternalReturnBillDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByExternalReturnBillDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByExternalReturnBill" Method="Pro_GetSerialIDNvarcharByExternalReturnBill">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByDepartment" Method="Pro_GetSerialIDIntByDepartment">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByDepartmentResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByPost" Method="Pro_GetSerialIDNvarcharByPost">
+    <Parameter Name="DepID" Parameter="depID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="JobCode" Parameter="jobCode" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByDepContact" Method="Pro_GetSerialIDIntByDepContact">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByDepContactResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByMsgBox" Method="Pro_GetSerialIDNvarcharByMsgBox">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(20)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByAssetsInfo" Method="Pro_GetSerialIDNvarcharByAssetsInfo">
+    <Parameter Name="AssetTypeCode" Parameter="assetTypeCode" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(30)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByAssetsChangeDetail" Method="Pro_GetSerialIDNvarcharByAssetsChangeDetail">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(30)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByPackingCost" Method="Pro_GetSerialIDIntByPackingCost">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByPackingCostResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByPackingCostDetails" Method="Pro_GetSerialIDIntByPackingCostDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByPackingCostDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByStandardCosts" Method="Pro_GetSerialIDIntByStandardCosts">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByStandardCostsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByRecycledMaterialCost" Method="Pro_GetSerialIDIntByRecycledMaterialCost">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByRecycledMaterialCostResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByRecycledMaterialCostDetails" Method="Pro_GetSerialIDIntByRecycledMaterialCostDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByRecycledMaterialCostDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntBySubsidiaryMaterialCost" Method="Pro_GetSerialIDIntBySubsidiaryMaterialCost">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntBySubsidiaryMaterialCostResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntBySubsidiaryMaterialCostDetails" Method="Pro_GetSerialIDIntBySubsidiaryMaterialCostDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntBySubsidiaryMaterialCostDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarchar_Material" Method="Pro_GetSerialIDNvarchar_Material">
+    <Parameter Name="MaterialPrefix" Parameter="materialPrefix" Type="System.String" DbType="NVarChar(23)" />
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(30)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByToolSharingCost" Method="Pro_GetSerialIDIntByToolSharingCost">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByToolSharingCostResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByToolSharingCostDetails" Method="Pro_GetSerialIDIntByToolSharingCostDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByToolSharingCostDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByProductionProcesses" Method="Pro_GetSerialIDIntByProductionProcesses">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByProductionProcessesResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByManagementCost" Method="Pro_GetSerialIDIntByManagementCost">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByManagementCostResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByManagementCostCardinalateSet" Method="Pro_GetSerialIDIntByManagementCostCardinalateSet">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByManagementCostCardinalateSetResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByReprocessingCost" Method="Pro_GetSerialIDIntByReprocessingCost">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByReprocessingCostResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByReprocessingCostDetails" Method="Pro_GetSerialIDIntByReprocessingCostDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByReprocessingCostDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByExchangeRateSet" Method="Pro_GetSerialIDIntByExchangeRateSet">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByExchangeRateSetResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByProfitBaseSet" Method="Pro_GetSerialIDIntByProfitBaseSet">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByProfitBaseSetResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByProfit" Method="Pro_GetSerialIDIntByProfit">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByProfitResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByEquipmentManufacturingCost" Method="Pro_GetSerialIDIntByEquipmentManufacturingCost">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByEquipmentManufacturingCostResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByEquipmentManufacturingCostDetails" Method="Pro_GetSerialIDIntByEquipmentManufacturingCostDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByEquipmentManufacturingCostDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByActualCosts" Method="Pro_GetSerialIDIntByActualCosts">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByActualCostsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByRawMaterialCost" Method="Pro_GetSerialIDIntByRawMaterialCost">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByRawMaterialCostResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByRawMaterialCostDetails" Method="Pro_GetSerialIDIntByRawMaterialCostDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByRawMaterialCostDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByTransportationCost" Method="Pro_GetSerialIDIntByTransportationCost">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByTransportationCostResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByTransportationCostDetails" Method="Pro_GetSerialIDIntByTransportationCostDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByTransportationCostDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByDirectLaborCost" Method="Pro_GetSerialIDIntByDirectLaborCost">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByDirectLaborCostResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByDirectLaborCostDetails" Method="Pro_GetSerialIDIntByDirectLaborCostDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByDirectLaborCostDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByDirectToolingAndEquipmentManufacturingSet" Method="Pro_GetSerialIDIntByDirectToolingAndEquipmentManufacturingSet">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByDirectToolingAndEquipmentManufacturingSetResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByMaterialVendorUnitRelation" Method="Pro_GetSerialIDIntByMaterialVendorUnitRelation">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByMaterialVendorUnitRelationResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByMaterialUnitRelation" Method="Pro_GetSerialIDIntByMaterialUnitRelation">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByMaterialUnitRelationResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByStockDetailsUnits" Method="Pro_GetSerialIDNvarcharByStockDetailsUnits">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByPurchaseListVendorDetailsUnits" Method="Pro_GetSerialIDIntByPurchaseListVendorDetailsUnits">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByPurchaseListVendorDetailsUnitsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByPurchaseCarryOutListMaterialDetailsUnits" Method="Pro_GetSerialIDIntByPurchaseCarryOutListMaterialDetailsUnits">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByPurchaseCarryOutListMaterialDetailsUnitsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByDefectiveGoodsStockDetailsUnits" Method="Pro_GetSerialIDNvarcharByDefectiveGoodsStockDetailsUnits">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByInnerSalesOrderDetailsUnits" Method="Pro_GetSerialIDNvarcharByInnerSalesOrderDetailsUnits">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByProcessFlowDetailSerialListUnits" Method="Pro_GetSerialIDNvarcharByProcessFlowDetailSerialListUnits">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByPrePurchaseGoal" Method="Pro_GetSerialIDNvarcharByPrePurchaseGoal">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByPreSaleGoal" Method="Pro_GetSerialIDNvarcharByPreSaleGoal">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByChangeAfterAttachment" Method="Pro_GetSerialIDIntByChangeAfterAttachment">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByChangeAfterAttachmentResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByChangeBeforeAttachment" Method="Pro_GetSerialIDIntByChangeBeforeAttachment">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByChangeBeforeAttachmentResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByDocumentProvide" Method="Pro_GetSerialIDIntByDocumentProvide">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByDocumentProvideResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByEngineerChangeApplyTableDtails" Method="Pro_GetSerialIDIntByEngineerChangeApplyTableDtails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByEngineerChangeApplyTableDtailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByEngineerChangeApplyTable" Method="Pro_GetSerialIDNvarcharByEngineerChangeApplyTable">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByAbateList" Method="Pro_GetSerialIDNvarcharByAbateList">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByAbateListMaterialDetails" Method="Pro_GetSerialIDIntByAbateListMaterialDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByAbateListMaterialDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByRFQProjectInfo" Method="Pro_GetSerialIDNvarcharByRFQProjectInfo">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByRFQProjectTeamInfo" Method="Pro_GetSerialIDIntByRFQProjectTeamInfo">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByRFQProjectTeamInfoResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByProcessQuoteParametersTable" Method="Pro_GetSerialIDNvarcharByProcessQuoteParametersTable">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByProcessQuoteParametersDetails" Method="Pro_GetSerialIDIntByProcessQuoteParametersDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByProcessQuoteParametersDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByPurchaseMaterialQuoteParametersDetails" Method="Pro_GetSerialIDNvarcharByPurchaseMaterialQuoteParametersDetails">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByPurchaseMaterialQuoteParametersTable" Method="Pro_GetSerialIDNvarcharByPurchaseMaterialQuoteParametersTable">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByPurchaseQuoteDetails" Method="Pro_GetSerialIDNvarcharByPurchaseQuoteDetails">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByRawMaterialslQuoteDetails" Method="Pro_GetSerialIDNvarcharByRawMaterialslQuoteDetails">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByPurchaseQuoteParametersVendorDetails" Method="Pro_GetSerialIDIntByPurchaseQuoteParametersVendorDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByPurchaseQuoteParametersVendorDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByCustomerQuoteList" Method="Pro_GetSerialIDNvarcharByCustomerQuoteList">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByCustomerQuoteListDetails" Method="Pro_GetSerialIDIntByCustomerQuoteListDetails">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByCustomerQuoteListDetailsResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByToolProcessingQuote" Method="Pro_GetSerialIDNvarcharByToolProcessingQuote">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByOtherQuote" Method="Pro_GetSerialIDNvarcharByOtherQuote">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByUnitPriceQuote" Method="Pro_GetSerialIDNvarcharByUnitPriceQuote">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDNvarcharByProcessingQuote" Method="Pro_GetSerialIDNvarcharByProcessingQuote">
+    <Parameter Name="result" Type="System.String" DbType="NVarChar(50)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByRDProjectTeamInfo" Method="Pro_GetSerialIDIntByRDProjectTeamInfo">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByRDProjectTeamInfoResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Pro_GetSerialIDIntByRDProjectProgressControlTable" Method="Pro_GetSerialIDIntByRDProjectProgressControlTable">
+    <Parameter Name="Result" Parameter="result" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="Pro_GetSerialIDIntByRDProjectProgressControlTableResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

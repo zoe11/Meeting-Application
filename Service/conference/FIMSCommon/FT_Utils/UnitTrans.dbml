@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="FT" Class="UnitTransDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=210.42.151.55;Initial Catalog=FT;Persist Security Info=True;User ID=FTAdmin" SettingsObjectName="UnitTransTool.Properties.Settings" SettingsPropertyName="FTConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.T_MaterialUnitRelation" Member="T_MaterialUnitRelation">
+    <Type Name="T_MaterialUnitRelation">
+      <Column Name="MaterialID" Type="System.String" DbType="NVarChar(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaterialVersion" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaterialUnitCode" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="MaterialUnit" Type="System.String" DbType="NVarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="PurchaseUnitCode" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="PurchaseUnit" Type="System.String" DbType="NVarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="PurchaseRelation" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="StockUnitCode" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="StockUnit" Type="System.String" DbType="NVarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="StockRelation" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="GetUnitCode" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="GetUnit" Type="System.String" DbType="NVarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="GetRelation" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ProductionUnitCode" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="ProductionUnit" Type="System.String" DbType="NVarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="ProductionRelation" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="StockInUnitCode" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="StockInUnit" Type="System.String" DbType="NVarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="StockInRelation" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="StockOutUnitCode" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="StockOutUnit" Type="System.String" DbType="NVarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="StockOutRelation" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="SalesUnitCode" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SalesUnit" Type="System.String" DbType="NVarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="SalesRelation" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

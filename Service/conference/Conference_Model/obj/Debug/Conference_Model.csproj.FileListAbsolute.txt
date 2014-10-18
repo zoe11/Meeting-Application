@@ -1,0 +1,5 @@
+D:\MEX\01 Github\Meeting-Application\Service\conference\Conference_Model\bin\Debug\Conference_Model.dll
+D:\MEX\01 Github\Meeting-Application\Service\conference\Conference_Model\bin\Debug\Conference_Model.pdb
+D:\MEX\01 Github\Meeting-Application\Service\conference\Conference_Model\obj\Debug\ResolveAssemblyReference.cache
+D:\MEX\01 Github\Meeting-Application\Service\conference\Conference_Model\obj\Debug\Conference_Model.dll
+D:\MEX\01 Github\Meeting-Application\Service\conference\Conference_Model\obj\Debug\Conference_Model.pdb
